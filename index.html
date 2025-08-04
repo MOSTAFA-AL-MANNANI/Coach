@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Hind El Guermai - Coach en Positivité & Hypnothérapeute</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rose-doux': '#F8BBD9',
+                        'violet-clair': '#E1BEE7',
+                        'rose-poudre': '#FDF2F8',
+                        'violet-fonce': '#7C3AED'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #FDF2F8 0%, #F8BBD9 50%, #E1BEE7 100%);
+        }
+        .floating-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-rose-doux to-violet-clair rounded-full flex items-center justify-center">
+                       <img src="logo.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-semibold text-violet-fonce">Dr Hind El Guermai</h1>
+                        <p class="text-sm text-gray-600">Coach & Hypnothérapeute</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#accueil" class="text-gray-700 hover:text-violet-fonce transition-colors duration-300">Accueil</a>
+                    <a href="#apropos" class="text-gray-700 hover:text-violet-fonce transition-colors duration-300">À propos</a>
+                    <a href="#services" class="text-gray-700 hover:text-violet-fonce transition-colors duration-300">Services</a>
+                    <a href="#témoignages" class="text-gray-700 hover:text-violet-fonce transition-colors duration-300">Témoignages</a>
+                    <a href="#contact" class="text-gray-700 hover:text-violet-fonce transition-colors duration-300">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="#accueil" class="text-gray-700 hover:text-violet-fonce transition-colors duration-300">Accueil</a>
+                    <a href="#apropos" class="text-gray-700 hover:text-violet-fonce transition-colors duration-300">À propos</a>
+                    <a href="#services" class="text-gray-700 hover:text-violet-fonce transition-colors duration-300">Services</a>
+                    <a href="#témoignages" class="text-gray-700 hover:text-violet-fonce transition-colors duration-300">Témoignages</a>
+                    <a href="#contact" class="text-gray-700 hover:text-violet-fonce transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="min-h-screen gradient-bg flex items-center justify-center relative overflow-hidden pt-20">
+        <!-- Éléments décoratifs flottants -->
+        <div class="absolute top-20 left-10 floating-animation opacity-30">
+            <img src="assets/images/oRdf7qSlhFQG.jpg" alt="Fleurs" class="w-20 h-20 rounded-full object-cover">
+        </div>
+        <div class="absolute bottom-20 right-10 floating-animation opacity-30" style="animation-delay: -3s;">
+            <img src="assets/images/3gPycPe7lAEk.jpg" alt="Papillon" class="w-16 h-16 rounded-full object-cover">
+        </div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+            <div class="mb-8">
+                <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-2xl border-4 border-white">
+                    <img src="h.png" alt="Dr Hind El Guermai" class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-bold text-violet-fonce mb-6">
+                Dr Hind El Guermai
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-700 mb-8 font-medium">
+                Coach en Positivité & Hypnothérapeute
+            </p>
+            <blockquote class="text-2xl md:text-3xl italic text-violet-fonce mb-12 font-light">
+                "Inspirez, rayonnez, laissez votre lumière briller 🦋"
+            </blockquote>
+            <a href="#contact" class="inline-block bg-violet-fonce text-white px-7 py-2 rounded-full text-lg font-semibold hover:bg-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                Réserver une séance
+            </a>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+<section id="apropos" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-violet-fonce mb-4">À propos de moi</h2>
+                <div class="w-24 h-1 bg-rose-doux mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-violet-fonce mb-4">Mon parcours professionnel</h3>
+                    
+                    <div class="bg-rose-poudre p-6 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg mb-2 text-violet-fonce">Formation académique</h4>
+                        <p class="text-gray-700">Docteur en biologie médicale avec plus de 10 ans d'expérience dans le domaine médical.</p>
+                    </div>
+                    
+                    <div class="bg-rose-poudre p-6 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg mb-2 text-violet-fonce">Expérience professionnelle</h4>
+                        <p class="text-gray-700">Directrice et fondatrice du Laboratoire Casa Analyses à Casablanca depuis 2016, avec une expertise reconnue en analyses médicales.</p>
+                    </div>
+                    
+                    <div class="bg-rose-poudre p-6 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-lg mb-2 text-violet-fonce">Spécialisations</h4>
+                        <p class="text-gray-700">Certifiée en coaching positif et hypnothérapie, je combine mon expertise médicale avec des approches holistiques du bien-être.</p>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="relative">
+                        <img src="H7.jpg" alt="Symbole féminin" class="w-full rounded-lg shadow-lg">
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-rose-doux to-violet-clair p-6 rounded-lg text-white shadow-lg">
+                        <h4 class="font-semibold text-lg mb-3">Ma philosophie</h4>
+                        <p class="text-white/90">Je crois profondément en la capacité de chaque personne à transformer sa vie. Mon approche combine la rigueur scientifique de ma formation médicale avec la bienveillance et l'écoute active du coaching positif.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Services -->
+    <section id="services" class="py-20 bg-rose-poudre">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-violet-fonce mb-4">Mes services</h2>
+                <div class="w-24 h-1 bg-rose-doux mx-auto"></div>
+                <p class="text-gray-700 mt-6 text-lg">Des accompagnements personnalisés pour votre bien-être</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-rose-doux to-violet-clair rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <span class="text-white text-2xl">💫</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-violet-fonce mb-3 text-center">Coaching Individuel</h3>
+                    <p class="text-gray-600 text-center">Séances personnalisées de coaching en positivité pour développer votre potentiel et atteindre vos objectifs.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-rose-doux to-violet-clair rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <span class="text-white text-2xl">🧘‍♀️</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-violet-fonce mb-3 text-center">Hypnothérapie</h3>
+                    <p class="text-gray-600 text-center">Thérapie par l'hypnose pour surmonter les blocages, gérer le stress et favoriser le changement positif.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-rose-doux to-violet-clair rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <span class="text-white text-2xl">📱</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-violet-fonce mb-3 text-center">Consultations en ligne</h3>
+                    <p class="text-gray-600 text-center">Séances de soutien psychologique par téléphone ou vidéo, adaptées à votre emploi du temps.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-rose-doux to-violet-clair rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <span class="text-white text-2xl">👥</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-violet-fonce mb-3 text-center">Programmes Spécialisés</h3>
+                    <p class="text-gray-600 text-center">Accompagnements dédiés aux femmes avec des programmes sur mesure selon vos besoins spécifiques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="temoignages" class="py-12 md:py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-violet-fonce mb-3 md:mb-4">Témoignages</h2>
+      <div class="w-20 md:w-24 h-1 bg-rose-doux mx-auto"></div>
+      <p class="text-gray-700 mt-4 md:mt-6 text-base md:text-lg">Ce que disent nos clients</p>
+    </div>
+
+    <div class="relative group">
+      <div class="overflow-hidden px-2">
+        <div class="flex transition-transform duration-500 ease-in-out gap-4" id="slides-container">
+           <!-- Témoignage 1 -->
+          <div class="w-full md:w-1/3 flex-shrink-0 px-2">
+            <div class="bg-rose-poudre p-5 md:p-6 rounded-lg h-full flex flex-col">
+              <div class="flex mb-3 md:mb-4">
+                <div class="flex text-yellow-400 text-sm md:text-base">⭐⭐⭐⭐⭐</div>
+              </div>
+              <p class="text-gray-700 mb-4 text-sm md:text-base italic flex-grow">
+                "Dr Hind m'a aidée à retrouver confiance en moi. Ses séances de coaching ont transformé ma vision de la vie. Je recommande vivement !"
+              </p>
+              <div class="flex items-center">
+                <div class="w-8 h-8 md:w-10 md:h-10 bg-violet-clair rounded-full flex items-center justify-center mr-3">
+                  <span class="text-white text-xs md:text-sm font-semibold">S.M</span>
+                </div>
+                <div>
+                  <p class="font-semibold text-sm md:text-base">Sarah M.</p>
+                  <p class="text-xs md:text-sm text-gray-600">Cliente depuis 6 mois</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Témoignage 2 -->
+          <div class="w-full md:w-1/3 flex-shrink-0 px-2">
+            <div class="bg-rose-poudre p-5 md:p-6 rounded-lg h-full flex flex-col">
+              <div class="flex mb-3 md:mb-4">
+                <div class="flex text-yellow-400 text-sm md:text-base">⭐⭐⭐⭐⭐</div>
+              </div>
+              <p class="text-gray-700 mb-4 text-sm md:text-base italic flex-grow">
+                "L'hypnothérapie avec Dr Hind a été une révélation. J'ai enfin réussi à surmonter mes angoisses. Merci pour votre bienveillance."
+              </p>
+              <div class="flex items-center">
+                <div class="w-8 h-8 md:w-10 md:h-10 bg-violet-clair rounded-full flex items-center justify-center mr-3">
+                  <span class="text-white text-xs md:text-sm font-semibold">A.K</span>
+                </div>
+                <div>
+                  <p class="font-semibold text-sm md:text-base">Amina K.</p>
+                  <p class="text-xs md:text-sm text-gray-600">Cliente depuis 1 an</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Témoignage 3 -->
+          <div class="w-full md:w-1/3 flex-shrink-0 px-2">
+            <div class="bg-rose-poudre p-5 md:p-6 rounded-lg h-full flex flex-col">
+              <div class="flex mb-3 md:mb-4">
+                <div class="flex text-yellow-400 text-sm md:text-base">⭐⭐⭐⭐⭐</div>
+              </div>
+              <p class="text-gray-700 mb-4 text-sm md:text-base italic flex-grow">
+                "Professionnelle, à l'écoute et très compétente. Les séances en ligne sont parfaites pour mon emploi du temps chargé."
+              </p>
+              <div class="flex items-center">
+                <div class="w-8 h-8 md:w-10 md:h-10 bg-violet-clair rounded-full flex items-center justify-center mr-3">
+                  <span class="text-white text-xs md:text-sm font-semibold">L.B</span>
+                </div>
+                <div>
+                  <p class="font-semibold text-sm md:text-base">Leila B.</p>
+                  <p class="text-xs md:text-sm text-gray-600">Cliente depuis 8 mois</p>
+                </div>
+              </div>
+            </div>
+          </div>
+                              <!-- Témoignage 5 -->
+                    <div class="w-80 md:w-96 flex-shrink-0 px-2">
+                        <div class="bg-rose-poudre p-5 md:p-6 rounded-lg h-full flex flex-col">
+                            <div class="flex mb-3 md:mb-4">
+                                <div class="flex text-yellow-400 text-sm md:text-base">
+                                    <span>⭐⭐⭐⭐⭐</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4 text-sm md:text-base italic flex-grow">"Laboratoire très bien équipé. Les prélèvements sont presque indolores grâce au savoir-faire des techniciens. Je recommande vivement !"</p>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 md:w-10 md:h-10 bg-violet-clair rounded-full flex items-center justify-center mr-3">
+                                    <span class="text-white text-xs md:text-sm font-semibold">F.Z</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-sm md:text-base">Fatima Z.</p>
+                                    <p class="text-xs md:text-sm text-gray-600">Patient depuis 5 ans</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Témoignage 6 -->
+                    <div class="w-80 md:w-96 flex-shrink-0 px-2">
+                        <div class="bg-rose-poudre p-5 md:p-6 rounded-lg h-full flex flex-col">
+                            <div class="flex mb-3 md:mb-4">
+                                <div class="flex text-yellow-400 text-sm md:text-base">
+                                    <span>⭐⭐⭐⭐⭐</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4 text-sm md:text-base italic flex-grow">"Un laboratoire qui inspire confiance. Les résultats sont toujours fiables et le personnel prend le temps d'expliquer chaque analyse."</p>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 md:w-10 md:h-10 bg-violet-clair rounded-full flex items-center justify-center mr-3">
+                                    <span class="text-white text-xs md:text-sm font-semibold">M.H</span>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-sm md:text-base">Mehdi H.</p>
+                                    <p class="text-xs md:text-sm text-gray-600">Patient depuis 1 an</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+      </div>
+
+      <!-- Boutons navigation -->
+      <button class="carousel-prev absolute left-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-10 -translate-x-2 hover:scale-110 transition opacity-0 group-hover:opacity-100 hidden md:block">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:h-6 md:w-6 text-violet-fonce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button class="carousel-next absolute right-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow-md z-10 translate-x-2 hover:scale-110 transition opacity-0 group-hover:opacity-100 hidden md:block">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:h-6 md:w-6 text-violet-fonce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+      <!-- Indicateurs (dots) -->
+      <div class="flex justify-center mt-6 space-x-2" id="carousel-dots"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const slidesContainer = document.getElementById('slides-container');
+  const slides = slidesContainer.querySelectorAll('.flex-shrink-0');
+  const prevBtn = document.querySelector('.carousel-prev');
+  const nextBtn = document.querySelector('.carousel-next');
+  const dotsContainer = document.getElementById('carousel-dots');
+
+  let currentIndex = 0;
+
+  function getVisibleSlides() {
+    if (window.innerWidth >= 1024) return 3;
+    if (window.innerWidth >= 640) return 2;
+    return 1;
+  }
+
+  function maxIndex() {
+    return Math.max(0, slides.length - getVisibleSlides());
+  }
+
+  function updateCarousel() {
+    const slideWidth = slides[0].offsetWidth + 16; // Include margin
+    slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }
+
+  function updateDots() {
+    dotsContainer.innerHTML = '';
+    const totalDots = maxIndex() + 1;
+    for (let i = 0; i < totalDots; i++) {
+      const dot = document.createElement('div');
+      dot.className = `w-2 h-2 rounded-full bg-violet-clair ${i === currentIndex ? 'opacity-100' : 'opacity-30'}`;
+      dot.addEventListener('click', () => {
+        currentIndex = i;
+        updateCarousel();
+        updateDots();
+      });
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % (maxIndex() + 1);
+    updateCarousel();
+    updateDots();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + maxIndex() + 1) % (maxIndex() + 1);
+    updateCarousel();
+    updateDots();
+  }
+
+  nextBtn.addEventListener('click', nextSlide);
+  prevBtn.addEventListener('click', prevSlide);
+
+  window.addEventListener('resize', () => {
+    currentIndex = 0;
+    updateCarousel();
+    updateDots();
+  });
+
+  let interval = setInterval(nextSlide, 6000);
+  updateCarousel();
+  updateDots();
+});
+</script>
+
+
+
+    <!-- Section Contact -->
+ <section id="contact" class="py-20 bg-gradient-to-br from-rose-poudre to-violet-clair">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-violet-fonce mb-4">Contactez-nous</h2>
+            <div class="w-24 h-1 bg-white mx-auto"></div>
+            <p class="text-gray-700 mt-6 text-lg">Prêt(e) à nous rendre visite ?</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-violet-fonce mb-4">Informations de contact</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-violet-fonce rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white">📧</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <p class="text-gray-600">contact@casa-analyses.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-violet-fonce rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white">📍</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Adresse</p>
+                                <p class="text-gray-600">Laboratoire Casa Analyses<br>Casablanca, Sidi Maârouf</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-violet-fonce rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white">🕒</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Horaires</p>
+                                <p class="text-gray-600">Lun-Ven: 8h-19h<br>Samedi: 9h-13h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-violet-fonce mb-4">Suivez-nous</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://web.facebook.com/dr.hindelguermai" target="_blank" class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/dr.hindelguermai" target="_blank" class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center text-white hover:bg-pink-700 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dr-hind-el-guermaï-khalil-619a65135/" target="_blank" class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-1 rounded-lg shadow-lg overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.872579788017!2d-7.598390025592454!3d33.56944654307131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd006b4566df%3A0x697cc1c3fc6f9005!2sLaboratoire%20CASA%20ANALYSES!5e1!3m2!1sfr!2sma!4v1754345151036!5m2!1sfr!2sma" 
+                        width="100%" 
+                        height="500" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="rounded-lg">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-violet-fonce text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-rose-doux to-violet-clair rounded-full flex items-center justify-center">
+                            <img src="logo.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold">Dr Hind El Guermai</h3>
+                            <p class="text-sm text-purple-200">Coach & Hypnothérapeute</p>
+                        </div>
+                    </div>
+                    <p class="text-purple-200">Accompagnement bienveillant pour votre épanouissement personnel et professionnel.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Liens rapides</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#accueil" class="text-purple-200 hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="#apropos" class="text-purple-200 hover:text-white transition-colors">À propos</a></li>
+                        <li><a href="#services" class="text-purple-200 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#témoignages" class="text-purple-200 hover:text-white transition-colors">Témoignages</a></li>
+                        <li><a href="#contact" class="text-purple-200 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <div class="space-y-2 text-purple-200">
+                        <p>📧 contact@hinelguermai.com</p>
+                        <p>📍 Casablanca, Sidi Maârouf</p>
+                        <p>🕒 Lun-Ven: 9h-18h</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-purple-600 mt-8 pt-8 text-center">
+                <p class="text-purple-200">&copy; 2025 Dr Hind El Guermai. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+        
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white/95');
+            } else {
+                nav.classList.remove('bg-white/95');
+            }
+        });
+    </script>
+</body>
+</html>
+
